@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
+func unusedFunc() {} // ← 使用されていない公開関数（警告）
+
 func main() {
-	// msg := "Hello, Go Static Analysis!" // ← 未使用変数警告を出す
 	fmt.Println("Hello World")
 }
